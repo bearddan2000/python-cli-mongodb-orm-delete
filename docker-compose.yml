@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+
+  py-srv:
+    build: api
+    depends_on:
+      - db
+
+  db:
+    image: mongo
